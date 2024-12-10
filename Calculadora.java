@@ -1,4 +1,4 @@
-//@Author Marcus Victor
+ //@Author Marcus Victor
 
 package calculadora;
 
@@ -12,19 +12,19 @@ public class Calculadora {
 		int escolha, continuar;
 		Double num1, num2, res;
 
-		System.out.println("Calculadora b·sica - VocÍ deve digitar dois n˙meros para fazer uma operaÁ„o matem·tica.");
+		System.out.println("Calculadora b√°sica - Voc√™ deve digitar dois n√∫meros para fazer uma opera√ß√£o matem√°tica.");
 		do {
-			System.out.println("Digite o primeiro n˙mero: ");
+			System.out.println("Digite o primeiro n√∫mero: ");
 			num1 = ler.nextDouble();
-			System.out.println("Digite o segundo n˙mero: ");
+			System.out.println("Digite o segundo n√∫mero: ");
 			num2 = ler.nextDouble();
 
 			do {
-				System.out.println("Digite qual operaÁ„o vocÍ deseja realizar");
-				System.out.println("CÛdigo-> 1 - MultiplicaÁ„o  |  2 - Divis„o  |  3 - Soma  |  4 - SubtraÁ„o");
+				System.out.println("Digite qual opera√ß√£o voc√™ deseja realizar");
+				System.out.println("C√≥digo-> 1 - Multiplica√ß√£o  |  2 - Divis√£o  |  3 - Soma  |  4 - Subtra√ß√£o");
 				escolha = ler.nextInt();
 				if (escolha < 1 || escolha > 4) {
-					System.out.println("CÛdigo inv·lido...");
+					System.out.println("C√≥digo inv√°lido...");
 				}
 			} while (escolha < 1 || escolha > 4);
 			switch (escolha) {
@@ -45,21 +45,21 @@ public class Calculadora {
 				System.out.println(num1 + " - " + num2 + " = " + res);
 				break;
 			default:
-				System.out.println("CÛdigo inv·lido!");
+				System.out.println("C√≥digo inv√°lido!");
 				break;
 			}
 
 			do {
-				System.out.println("VocÍ deseja fazer outra operaÁ„o?");
-				System.out.println("1 - Sim  |  2 - N„o");
+				System.out.println("Voc√™ deseja fazer outra opera√ß√£o?");
+				System.out.println("1 - Sim  |  2 - N√£o");
 				continuar = ler.nextInt();
 				if (continuar < 1 || continuar > 2) {
-					System.out.println("CÛdigo inv·lido...");
+					System.out.println("C√≥digo inv√°lido...");
 				}
 			} while (continuar < 1 || continuar > 2);
 
 		} while (continuar == 1);
-		System.out.println("VocÍ saiu da calculadora!");
+		System.out.println("Voc√™ saiu da calculadora!");
 	}
 
 }
