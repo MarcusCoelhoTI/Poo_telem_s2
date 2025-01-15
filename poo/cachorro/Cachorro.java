@@ -1,3 +1,4 @@
+//@author Marcus Coelho
 package cachorro;
 
 public class Cachorro {
